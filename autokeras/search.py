@@ -66,6 +66,7 @@ class Searcher(ABC):
         """
         if trainer_args is None:
             trainer_args = {}
+        print("INPUT SHAPE: ",input_shape)
         self.n_classes = n_output_node
         self.input_shape = input_shape
         self.verbose = verbose
